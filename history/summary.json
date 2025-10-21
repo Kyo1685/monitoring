@@ -4,18 +4,20 @@
     "url": "https://supabase.com/dashboard/project/kaphkcyzqlemozeszdyd",
     "icon": "https://icons.duckduckgo.com/ip3/supabase.com.ico",
     "slug": "my-supabase-project",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 110,
-    "timeDay": 110,
-    "timeWeek": 110,
-    "timeMonth": 110,
-    "timeYear": 110,
-    "dailyMinutesDown": {}
+    "status": "up",
+    "uptime": "96.35%",
+    "uptimeDay": "96.35%",
+    "uptimeWeek": "96.35%",
+    "uptimeMonth": "96.35%",
+    "uptimeYear": "96.35%",
+    "time": 127,
+    "timeDay": 127,
+    "timeWeek": 127,
+    "timeMonth": 127,
+    "timeYear": 127,
+    "dailyMinutesDown": {
+      "2025-10-21": 20
+    }
   },
   {
     "name": "Render",
