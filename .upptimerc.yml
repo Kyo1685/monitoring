@@ -23,8 +23,6 @@ sites:
       - "Authorization: Bearer $SUPABASE_ANON_KEY"
       
   - name: Render
-    url: https://render.com
-  - name: My Personal App
     url: https://bot-ojfu.onrender.com
 
 status-website:
