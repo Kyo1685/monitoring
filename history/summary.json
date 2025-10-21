@@ -4,7 +4,7 @@
     "url": "https://supabase.com/dashboard/project/kaphkcyzqlemozeszdyd",
     "icon": "https://icons.duckduckgo.com/ip3/supabase.com.ico",
     "slug": "my-supabase-project",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -23,18 +23,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/bot-ojfu.onrender.com.ico",
     "slug": "render",
     "status": "up",
-    "uptime": "93.80%",
-    "uptimeDay": "93.80%",
-    "uptimeWeek": "93.80%",
-    "uptimeMonth": "93.80%",
-    "uptimeYear": "93.80%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 238,
     "timeDay": 238,
     "timeWeek": 238,
     "timeMonth": 238,
     "timeYear": 238,
-    "dailyMinutesDown": {
-      "2025-10-21": 13
-    }
+    "dailyMinutesDown": {}
   }
 ]
