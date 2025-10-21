@@ -1,42 +1,81 @@
-# Change this to your GitHub username
+# ===============================
+# =      Upptime Config File      =
+# ===============================
+
+# Your GitHub username or organization name
 owner: Kyo1685
 
-# Change this to the name of your repository
+# Your GitHub repository name
 repo: supabase-monitoring
 
-sites:
-  - name: Render
-    url: https://supabase.com
-  - name: My Personal App
-    url: https://supabase.com/dashboard/project/kaphkcyzqlemozeszdyd
+# User-Agent header for requests (good practice to identify your bot)
+userAgent: upptime-bot (https://github.com/$owner/$repo)
 
-# This section creates your status page
+# List of sites to monitor
+sites:
+  - name: My Supabase Project
+    # This URL pings a table in your Supabase project to keep it active
+    # !! Replace <your-project-ref> with your Supabase project reference !!
+    url: https://supabase.com/dashboard/project/kaphkcyzqlemozeszdyd
+    headers:
+      # These headers use the $SUPABASE_ANON_KEY secret
+      - "apikey: $SUPABASE_ANON_KEY"
+      - "Authorization: Bearer $SUPABASE_ANON_KEY"
+      
+  - name: Render
+    url: https://render.com
+  - name: My Personal App
+    url: https://bot-ojfu.onrender.com
+
+# Configuration for your status website (GitHub Pages)
 status-website:
-  # This line is important! It tells the status page where to find its files.
+  # If you are using a custom domain, uncomment the next line:
+  # cname: status.your-domain.com
+  
+  # If you are NOT using a custom domain, use the "baseUrl" line instead:
+  # !! Replace "your-repo-name" with your repository name !!
   baseUrl: /supabase-monitoring
+  
+  # Website branding
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: My Uptime Status
-  introTitle: "This is a live status page for my services."
-  introMessage: "It uses GitHub Actions to check my sites every 5 minutes."
+  name: My Project's Status
+  introTitle: "Uptime Monitor & Status Page"
+  introMessage: "This page shows the real-time status of my services. The Supabase project is pinged regularly to prevent pausing."
+  
+  # Links to show in the navbar
   navbar:
     - title: Status
-      url: /
+      href: /
     - title: GitHub
-      url: https://github.com/Kyo1685/supabase-monitoring
+      href: https://github.com/$owner/$repo
 
-workflowSchedule:
-  graphs: "0 0 * * *"
-  staticSite: "0 1 * * *"
-  summary: "0 0 * * *"
-  uptime: "*/5 * * * *"
-
-# --- TELEGRAM NOTIFICATION SECTION ---
-# This block tells Upptime to send alerts to Telegram
+# 🚨 Your requested notification block
 notifications:
   - type: telegram
     # NOTE: The actual Bot Token and Chat ID are loaded from your GitHub Secrets.
     message: '🚨 $EMOJI $SITE_NAME ($SITE_URL) is $STATUS! Check the issue here: $ISSUE_URL'
+    
+# Internationalization
+i18n:
+  allSystemsOperational: All systems operational
+  incidentHistory: Incident History
+  activeIncidents: Active Incidents
+  pastIncidents: Past Incidents
+  degradedPerformance: Degraded performance
+  completeOutage: Complete outage
+  partialOutage: Partial outage
+  
+# How often to run the GitHub Actions workflows
+workflowSchedule:
+  graphs: "0 0 * * *"       # Runs daily at midnight
+  staticSite: "0 1 * * *"  # Runs daily at 1 AM
+  summary: "0 0 * * *"     # Runs daily at midnight
+  uptime: "*/5 * * * *"     # Runs every 5 minutes
 
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Commit messages for automated updates
+commitMessages:
+  readmeContent: ":pencil: Update summary in README [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Update status summary [skip ci] [upptime]"
+  statusHistory: ":clock1: Update status history [skip ci] [upptime]"
+  graphs: ":bento: Update graphs [skip ci] [upptime]"
+  staticSite: ":art: Build status website [skip ci] [upptime]"
