@@ -24,13 +24,20 @@ status-website:
     - title: GitHub
       url: https://github.com/Kyo1685/supabase-monitoring
 
-# This sets how often to check.
 workflowSchedule:
   graphs: "0 0 * * *"
   staticSite: "0 1 * * *"
   summary: "0 0 * * *"
-  # This means "every 5 minutes" (the minimum for GitHub Actions)
   uptime: "*/5 * * * *"
+
+# --- TELEGRAM NOTIFICATION SECTION ---
+# This block tells Upptime to send alerts to Telegram
+notifications:
+  - type: telegram
+    # NOTE: The actual Bot Token and Chat ID are loaded from your GitHub Secrets.
+    message: '🚨 $EMOJI $SITE_NAME ($SITE_URL) is $STATUS! Check the issue here: $ISSUE_URL'
+  uptime: "*/5 * * * *" # This means "every 5 minutes"
+
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
