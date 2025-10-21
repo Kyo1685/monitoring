@@ -6,7 +6,7 @@
 owner: Kyo1685
 
 # Your GitHub repository name
-repo: supabase-monitoring
+repo: monitoring
 
 # User-Agent header for requests (good practice to identify your bot)
 userAgent: upptime-bot (https://github.com/$owner/$repo)
@@ -34,7 +34,7 @@ status-website:
   
   # If you are NOT using a custom domain, use the "baseUrl" line instead:
   # !! Replace "your-repo-name" with your repository name !!
-  baseUrl: /supabase-monitoring
+  baseUrl: /monitoring
   
   # Website branding
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
