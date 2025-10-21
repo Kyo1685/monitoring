@@ -27,20 +27,19 @@ sites:
   - name: My Personal App
     url: https://bot-ojfu.onrender.com
 
-# Configuration for your status website (GitHub Pages)
 status-website:
-  # If you are using a custom domain, uncomment the next line:
-  # cname: status.your-domain.com
-  
-  # If you are NOT using a custom domain, use the "baseUrl" line instead:
-  # !! Replace "your-repo-name" with your repository name !!
+  # This line is important! It tells the status page where to find its files.
+  # Replace `my-status-page` with your repository's name.
   baseUrl: /monitoring
-  
-  # Website branding
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: My Project's Status
-  introTitle: "Uptime Monitor & Status Page"
-  introMessage: "This page shows the real-time status of my services. The Supabase project is pinged regularly to prevent pausing."
+  name: My Uptime Status
+  introTitle: "This is a live status page for my services."
+  introMessage: "It uses GitHub Actions to check my sites every 5 minutes."
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/Kyo1685/monitoring
   
   # Links to show in the navbar
   navbar:
