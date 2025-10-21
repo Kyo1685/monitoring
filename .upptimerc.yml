@@ -40,13 +40,6 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/Kyo1685/monitoring
-  
-  # Links to show in the navbar
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$owner/$repo
 
 # 🚨 Your requested notification block
 notifications:
