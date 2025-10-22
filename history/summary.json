@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/supabase.com.ico",
     "slug": "my-supabase-project",
     "status": "up",
-    "uptime": "97.52%",
-    "uptimeDay": "97.52%",
-    "uptimeWeek": "97.52%",
-    "uptimeMonth": "97.52%",
-    "uptimeYear": "97.52%",
+    "uptime": "98.08%",
+    "uptimeDay": "98.08%",
+    "uptimeWeek": "98.08%",
+    "uptimeMonth": "98.08%",
+    "uptimeYear": "98.08%",
     "time": 137,
     "timeDay": 137,
     "timeWeek": 137,
@@ -24,7 +24,7 @@
     "url": "https://bot-ojfu.onrender.com",
     "icon": "https://icons.duckduckgo.com/ip3/bot-ojfu.onrender.com.ico",
     "slug": "render",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -35,6 +35,8 @@
     "timeWeek": 253,
     "timeMonth": 253,
     "timeYear": 253,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-10-22": 0
+    }
   }
 ]
