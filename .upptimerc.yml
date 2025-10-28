@@ -23,7 +23,7 @@ sites:
       - "Authorization: Bearer $SUPABASE_ANON_KEY"
       
   - name: Render
-    url: https://bot-hare.onrender.com
+    url: https://bot-ha41.onrender.com
 
 status-website:
   # This line is important! It tells the status page where to find its files.
