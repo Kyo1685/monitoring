@@ -13,17 +13,9 @@ userAgent: upptime-bot (https://github.com/$owner/$repo)
 
 # List of sites to monitor
 sites:
-  - name: My Supabase Project
-    # This URL pings a table in your Supabase project to keep it active
-    # !! Replace <your-project-ref> with your Supabase project reference !!
-    url: https://supabase.com/dashboard/project/kaphkcyzqlemozeszdyd
-    headers:
-      # These headers use the $SUPABASE_ANON_KEY secret
-      - "apikey: $SUPABASE_ANON_KEY"
-      - "Authorization: Bearer $SUPABASE_ANON_KEY"
       
   - name: Render
-    url: https://bot-ha41.onrender.com
+    url: https://bot-1xko.onrender.com
 
 status-website:
   # This line is important! It tells the status page where to find its files.
