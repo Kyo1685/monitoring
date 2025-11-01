@@ -16,6 +16,7 @@ sites:
       
   - name: Render
     url: https://bot-1xko.onrender.com
+    maxResponseTime: 20000
 
 status-website:
   # This line is important! It tells the status page where to find its files.
