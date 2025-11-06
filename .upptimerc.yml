@@ -5,60 +5,99 @@
 # Your GitHub username or organization name
 owner: Kyo1685
 
-# Your GitHub repository name
+# Your GitHub repository name  
 repo: monitoring
 
-# User-Agent header for requests (good practice to identify your bot)
+# User-Agent header for requests
 userAgent: upptime-bot (https://github.com/$owner/$repo)
 
 # List of sites to monitor
 sites:
-      
-  - name: Render
-    url: https://bot-1xko.onrender.com
-    maxResponseTime: 20000
+  - name: "Render Bot API - Health"
+    url: https://bot-1xko.onrender.com/health
+    maxResponseTime: 15000
+    expectedStatusCodes:
+      - 200
 
+  - name: "Render Bot API - Ping"  
+    url: https://bot-1xko.onrender.com/ping
+    maxResponseTime: 30000
+    expectedStatusCodes:
+      - 200
+
+  - name: "Render Bot - Root"
+    url: https://bot-1xko.onrender.com/
+    maxResponseTime: 30000
+    expectedStatusCodes:
+      - 200
+
+  - name: "Netlify Admin Panel"
+    url: https://your-app.netlify.app/admin.html
+    maxResponseTime: 10000
+
+# Status website configuration
 status-website:
-  # This line is important! It tells the status page where to find its files.
-  # Replace `my-status-page` with your repository's name.
   baseUrl: /monitoring
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: My Uptime Status
-  introTitle: "This is a live status page for my services."
-  introMessage: "It uses GitHub Actions to check my sites every 5 minutes."
+  name: "Bot Services Status"
+  introTitle: "Live Status Monitoring"
+  introMessage: "Real-time monitoring of bot services with 5-minute checks"
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/Kyo1685/monitoring
+    - title: Bot
+      href: https://bot-1xko.onrender.com
 
-# 🚨 Your requested notification block
-notifications:
-  - type: telegram
-    # NOTE: The actual Bot Token and Chat ID are loaded from your GitHub Secrets.
-    message: '🚨 $EMOJI $SITE_NAME ($SITE_URL) is $STATUS! Check the issue here: $ISSUE_URL'
-    
+# Notifications (Telegram - optional)
+# notifications:
+#   - type: telegram
+#     botToken: $TELEGRAM_BOT_TOKEN
+#     chatId: $TELEGRAM_CHAT_ID
+
 # Internationalization
 i18n:
-  allSystemsOperational: All systems operational
-  incidentHistory: Incident History
-  activeIncidents: Active Incidents
-  pastIncidents: Past Incidents
-  degradedPerformance: Degraded performance
-  completeOutage: Complete outage
-  partialOutage: Partial outage
-  
-# How often to run the GitHub Actions workflows
-workflowSchedule:
-  graphs: "0 0 * * *"       # Runs daily at midnight
-  staticSite: "0 1 * * *"  # Runs daily at 1 AM
-  summary: "0 0 * * *"     # Runs daily at midnight
-  uptime: "*/5 * * * *"     # Runs every 5 minutes
+  allSystemsOperational: "All systems operational"
+  incidentHistory: "Incident History" 
+  activeIncidents: "Active Incidents"
+  pastIncidents: "Past Incidents"
+  degradedPerformance: "Degraded performance"
+  completeOutage: "Complete outage"
+  partialOutage: "Partial outage"
+  underMaintenance: "Under maintenance"
+  majorOutage: "Major outage"
+  notOperational: "Not operational"
 
-# Commit messages for automated updates
+# Workflow schedules
+workflowSchedule:
+  graphs: "0 0 * * *"        # Daily at midnight
+  responseTime: "0 12 * * *"  # Daily at noon  
+  staticSite: "0 1 * * *"     # Daily at 1 AM
+  summary: "0 0 * * *"        # Daily at midnight
+  uptime: "*/5 * * * *"       # Every 5 minutes (CRITICAL - keeps services alive)
+
+# Commit messages
 commitMessages:
-  readmeContent: ":pencil: Update summary in README [skip ci] [upptime]"
+  readmeContent: ":pencil: Update status summary [skip ci] [upptime]"
+  responseTime: ":rocket: Update response time [skip ci] [upptime]" 
   summaryJson: ":card_file_box: Update status summary [skip ci] [upptime]"
+  statusChange: ":ambulance: Update status [skip ci] [upptime]"
   statusHistory: ":clock1: Update status history [skip ci] [upptime]"
-  graphs: ":bento: Update graphs [skip ci] [upptime]"
-  staticSite: ":art: Build status website [skip ci] [upptime]"
+  graphs: ":bar_chart: Update graphs [skip ci] [upptime]"
+  staticSite: ":globe_with_meridians: Build status site [skip ci] [upptime]"
+  updates: ":arrow_up: Update dependencies [skip ci] [upptime]"
+
+notifications:
+  - type: telegram
+    botToken: $TELEGRAM_BOT_TOKEN
+    chatId: $TELEGRAM_CHAT_ID
+
+# Assignees for incidents
+assignees: Kyo1685
+
+# Skip CI for certain commits  
+skipCi: true
+
+# Upptime.js version (optional)
+upptimeVersion: "2.8.0"
