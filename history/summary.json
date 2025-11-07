@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/bot-1xko.onrender.com.ico",
     "slug": "render-bot-api-health",
     "status": "down",
-    "uptime": "0.43%",
-    "uptimeDay": "0.43%",
-    "uptimeWeek": "0.43%",
-    "uptimeMonth": "0.43%",
-    "uptimeYear": "0.43%",
+    "uptime": "96.71%",
+    "uptimeDay": "96.71%",
+    "uptimeWeek": "96.71%",
+    "uptimeMonth": "96.71%",
+    "uptimeYear": "96.71%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -25,11 +25,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/bot-1xko.onrender.com.ico",
     "slug": "render-bot-api-ping",
     "status": "down",
-    "uptime": "0.35%",
-    "uptimeDay": "0.35%",
-    "uptimeWeek": "0.35%",
-    "uptimeMonth": "0.35%",
-    "uptimeYear": "0.35%",
+    "uptime": "96.71%",
+    "uptimeDay": "96.71%",
+    "uptimeWeek": "96.71%",
+    "uptimeMonth": "96.71%",
+    "uptimeYear": "96.71%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -45,19 +45,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/bot-1xko.onrender.com.ico",
     "slug": "render-bot-root",
     "status": "down",
-    "uptime": "79.55%",
-    "uptimeDay": "79.55%",
-    "uptimeWeek": "79.55%",
-    "uptimeMonth": "79.55%",
-    "uptimeYear": "79.55%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {
-      "2025-11-06": 7
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Netlify Admin Panel",
@@ -76,7 +74,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-11-06": 37
+      "2025-11-07": 50,
+      "2025-11-06": 1058
     }
   }
 ]
