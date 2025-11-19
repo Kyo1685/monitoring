@@ -1,7 +1,7 @@
 url: https://bot-1xko.onrender.com/health
-status: down
+status: degraded
 code: 404
-responseTime: 866
-lastUpdated: 2025-11-19T13:36:50.246Z
+responseTime: 24286
+lastUpdated: 2025-11-19T16:19:39.245Z
 startTime: 2025-11-06T06:21:37.142Z
 generator: Upptime <https://github.com/upptime/upptime>
